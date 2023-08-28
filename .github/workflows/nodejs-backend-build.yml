@@ -13,7 +13,7 @@ jobs:
       pull-requests: write
     with:
       NPM_JSON_LOCATION: 'backend/'
-      NPM_COMMAND: 'node app.js' 
+      NPM_COMMAND: 'node backend/app.js' 
 
       
 
