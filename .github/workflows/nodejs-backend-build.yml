@@ -1,0 +1,19 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Node JS Backend
+
+on:
+  workflow_dispatch:
+jobs:
+  build-test-deploy:
+    uses: poc-github-framework/java-workflow/.github/workflows/node-aks-framework.yml@main
+    permissions:
+      checks: write
+      pull-requests: write
+    with:
+      NPM_JSON_LOCATION: 'backend/'
+
+      
+
+      
